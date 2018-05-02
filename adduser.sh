@@ -2,11 +2,11 @@
 
 __create_user() {
 # Create a user to SSH into as.
-echo 'root:c0n5u7t33r' | chpasswd
+echo 'root:password' | chpasswd
 useradd user
-SSH_USERPASS=consulteer
+SSH_USERPASS=password
 echo -e "$SSH_USERPASS\n$SSH_USERPASS" | (passwd --stdin user)
-echo ssh user consulteer: $SSH_USERPASS
+echo ssh user password: $SSH_USERPASS
 usermod -aG wheel user
 }
 # Call all functions
