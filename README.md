@@ -5,6 +5,7 @@
  and add user to ubuntu 16.04 machine
 
  Make your WORK$DIR and add Dockerfile and adduser.sh script,
+ You can edit adduser.sh script, to create your own user name and password.
 
 cd ~/WORK$DIR
 
@@ -26,10 +27,10 @@ ens18
           ...
           ...
 
- Connect to created container 
+Connect to created container 
 
 
 ssh $IP -p $Port
 
 
- Have fun ...
+Have fun, docker is awesome ... 
